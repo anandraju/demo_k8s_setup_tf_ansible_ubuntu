@@ -1,4 +1,0 @@
----
-#api_adv_add: 192.168.2.1
-pod_nw_cidr: 172.16.0.0/16
-token_file: join_token
