@@ -16,3 +16,7 @@ A worked example to provision, Automate and setup Kubernetes cluster(kubeadm) on
 4. The terraform script will display the private IPs after executing the scripts successfully 
 
 ### Setup Kubernetes using Ansible:
+1. Navigate to Ansible directory
+2. Setup the inventory by copy pasting private IPs (#terraform output) 
+3. Please do the smoke test by using the ping command (#ansible all -m ping)
+4. Run Ansible playbook (#ansible-playbook playbooks/main.yaml)
