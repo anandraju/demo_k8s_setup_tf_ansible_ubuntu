@@ -1,0 +1,25 @@
+- name: COMMON SETUP FOR BOTH MASTER AND WORKER
+  hosts: all
+  become: yes
+  become_user: root
+  vars_files:
+  - env_variables
+
+  tasks:
+  - name: Installing kubernetes dependencies 
+    apt: name=apt-transport-https state=latest update_cache=yes
+
+  - name: Apt-key added
+    apt_key:
+      url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+      state: present
+
+  - name: apt_repository added
+    apt_repository:
+      repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
+      state: present
+      filename: kubernetes
+      
+  - name: Installed kubelet kubeadm kubectl
+    apt: name={{ item }} state=latest update_cache=yes force_apt_get=yes
+    loop: ['kubelet', 'kubeadm', 'kubectl']

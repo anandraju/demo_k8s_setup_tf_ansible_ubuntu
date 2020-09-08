@@ -1,0 +1,7 @@
+---
+- import_playbook: ./prerequisites.yaml
+- import_playbook: ./docker-install.yaml
+- import_playbook: ./common_pkgs_master_and_worker_nodes.yaml
+- import_playbook: ./master-kubernetes-setup.yaml
+- import_playbook: ./workers-setup.yaml
+

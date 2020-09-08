@@ -1,0 +1,18 @@
+node1 ansible_host=#<Add your private IP - master node>
+node2 ansible_host=#<Add your private IP - worker node>>
+
+[master]
+node1
+
+[worker]
+node2
+
+[all]
+node1
+node2
+
+[all:vars]
+ansible_private_key_file=mykey
+ansible_ssh_user=ubuntu
+ansible_python_interpreter=/usr/bin/python
+
