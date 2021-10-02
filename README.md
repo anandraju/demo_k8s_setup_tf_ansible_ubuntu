@@ -1,4 +1,4 @@
-# Kubernetes setup
+# Automation - Kubernetes setup using Terraform & Ansible
 A worked example to provision, Automate and setup Kubernetes cluster(kubeadm) on AWS ec2 instance(ubuntu) using Terraform and Anisble 
 
 #### Requirements 
