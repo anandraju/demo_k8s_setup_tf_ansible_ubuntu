@@ -1,5 +1,5 @@
 # Automation - Kubernetes setup using Terraform & Ansible
-A worked example to provision, Automate and setup Kubernetes cluster(kubeadm) on AWS ec2 instance(ubuntu) using Terraform and Anisble 
+A worked example to provision, Automate and setup Kubernetes cluster(**kubeadm - One Master node and One Worker node**) on AWS ec2 instance(ubuntu) using Terraform and Anisble 
 
 #### Requirements 
 1. Terraform v0.12
